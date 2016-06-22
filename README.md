@@ -11,24 +11,26 @@ Example of Contract Announcement:
 
 Here is the regular expression (<a href="https://regex101.com/r/zJ5uC5/1">You can see how it works in a RegEx tester here</a>):
 
+
 <b>^[^,]*)[,]([*]?)\s([^,]*,\s[^,]*)[^$]*(\$\d+[^ ]*)\s+(.+?(?=contract))contract([^.]*)[^(]*\((\w{6}-\w{2}[^)]*)</b>
+
 
 
 Here is the regular expression broken down into its individual functions:
 
-^[^,]*) = Name of company
+<b>^[^,]*)</b> = Name of company
 
-([*]?) = Potential asterisk, which signifies a small business/woman-owned business classification
+<b>([*]?)</b> = Potential asterisk, which signifies a small business/woman-owned business classification
 
-([^,]*,\s[^,]*) = Location of company
+<b>([^,]*,\s[^,]*)</b> = Location of company
 
-(\$\d+[^ ]*) = Dollar amount of contract
+<b>(\$\d+[^ ]*)</b> = Dollar amount of contract
 
-(.+?(?=contract)) = Type of contract ("cost-plus-fixed fee", "firm fixed price" etc)
+<b>(.+?(?=contract))</b> = Type of contract ("cost-plus-fixed fee", "firm fixed price" etc)
 
-([^.]*) = Description of work to be completed
+<b>([^.]*)</b> = Description of work to be completed
 
-(\w{6}-\w{2}[^)]*) = Unique ID
+<b>(\w{6}-\w{2}[^)]*)</b> = Unique ID
 
 
 This expression works on many of the conventionally-formatted contract announcements; it does not yet scrape the completion date, the location of work, or how many bids were received for the contract.
