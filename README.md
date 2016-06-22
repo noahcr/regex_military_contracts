@@ -11,7 +11,7 @@ Example of Contract Announcement:
 
 Here is the regular expression (<a href="https://regex101.com/r/zJ5uC5/1">You can see how it works in a RegEx tester here</a>):
 
-^[^,]*)[,]([*]?)\s([^,]*,\s[^,]*)[^$]*(\$\d+[^ ]*)\s+(.+?(?=contract))contract([^.]*)[^(]*\((\w{6}-\w{2}[^)]*)
+<b>^[^,]*)[,]([*]?)\s([^,]*,\s[^,]*)[^$]*(\$\d+[^ ]*)\s+(.+?(?=contract))contract([^.]*)[^(]*\((\w{6}-\w{2}[^)]*)</b>
 
 
 Here is the regular expression broken down into its individual functions:
