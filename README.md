@@ -1,5 +1,6 @@
 # regex_military_contracts
-In-progress RegEx code to scrape Dept. of Defense contract announcements for relevant data.
+
+<b>An in-progress RegEx code to scrape Dept. of Defense contract announcements for relevant data.</b>
 
 The Department of Defense announces new contracts on a nearly daily basis - many are in the hundreds of millions of dollars, and some excede $1 billion. But aggregate data about the contracts isn't released until the fiscal year is closed. This regular expression script aims to pluck data fields from the contract announcements as they come out, capturing the company, location, amount, description of work, unique ID, etc. 
 
